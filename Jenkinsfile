@@ -56,6 +56,7 @@ pipeline {
                 ]) {
 
                     sh '''
+                    git checkout -B main origin/main
                     git remote set-url origin https://${GIT_USER}:${GIT_PASS}@github.com/Kalyan2026/devops-cicd-project.git
 
                     git push origin main
