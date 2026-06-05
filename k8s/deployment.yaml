@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-cicd-project
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      ape: devops-cicd-project
+  template:
+    metadata:
+      labels:
+        ape: devops-cicd-project
+    spec:
+      containers:
+      - name: app
+        image: kalyandevops2026/devops-cicd-project:v1
+        ports:
+        - containerPort: 80
