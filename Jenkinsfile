@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https:..github.com/Kalyan2026/devops-cicd-project.git'
+                git 'https://github.com/Kalyan2026/devops-cicd-project.git'
             }
         }
 
