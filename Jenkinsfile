@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t devops-cicd-project:v1 app/'
+                sh 'docker build -t kalyandevops2026/devops-cicd-project:v1 app/'
             }
         }
 
