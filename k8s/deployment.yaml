@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: kalyandevops2026/devops-cicd-project:v1
+        image: kalyandevops2026/devops-cicd-project:1
         ports:
         - containerPort: 80
