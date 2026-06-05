@@ -6,11 +6,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      ape: devops-cicd-project
+      app: devops-cicd-project
   template:
     metadata:
       labels:
-        ape: devops-cicd-project
+        app: devops-cicd-project
     spec:
       containers:
       - name: app
